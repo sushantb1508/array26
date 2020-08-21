@@ -1,0 +1,14 @@
+def duplicate(arr,n):
+    d={}
+    ls=[]
+    for i in arr:
+        if not i in d:
+            d[i]=True
+        else:
+            ls.append(i)
+    return set(ls)
+if __name__ == "__main__":
+    arr=[1,5,1,2,3,2,3,1,1,2,2]
+    n=len(arr)
+    ans=duplicate(arr,n)
+    print(*ans)
