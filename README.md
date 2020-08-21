@@ -1,0 +1,2 @@
+# array26
+duplicates
